@@ -13,17 +13,15 @@ public class CollisionHandler : MonoBehaviour
             case "Finish":
                 Debug.Log("Congrats, you have finished the level");
                 break;
-            case "Fuel":
-                 Debug.Log("You have picked up fuel");
-                 break;
-            default:
-                  ReloadLevel();
-                  break;  
+            case "Untagged":
+                ReloadLevel();
+                break;  
        }
     }
 
     void ReloadLevel()
     {
-        SceneManager.LoadScene(0);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
