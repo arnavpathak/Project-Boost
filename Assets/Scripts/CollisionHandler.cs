@@ -5,6 +5,7 @@ public class CollisionHandler : MonoBehaviour
 {
     void OnCollisionEnter(Collision other)
     {
+       //Debug.Log("The game object is:" + other.gameObject.name);
        switch (other.gameObject.tag)
        {
            case "Friendly":
@@ -13,9 +14,9 @@ public class CollisionHandler : MonoBehaviour
             case "Finish":
                 Debug.Log("Congrats, you have finished the level");
                 break;
-            case "Untagged":
+            default:
                 ReloadLevel();
-                break;  
+                break;
        }
     }
 
