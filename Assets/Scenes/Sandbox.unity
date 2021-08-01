@@ -518,6 +518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 4500344795765447513, guid: b7b0d4bdd9624f54c9afa911a604b962, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     - target: {fileID: 4500344795765447517, guid: b7b0d4bdd9624f54c9afa911a604b962, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -702,7 +706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6677476213104304653, guid: 1c457a48d89282a4da1b4f28f5838154, type: 3}
       propertyPath: m_TagString
-      value: Respawn
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8747253697152380884, guid: 1c457a48d89282a4da1b4f28f5838154, type: 3}
       propertyPath: m_Materials.Array.data[0]
