@@ -4,19 +4,25 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 { 
     [SerializeField] float levelLoadDelay = 2f;
+    [SerializeField] AudioClip Finish;
+    [SerializeField] AudioClip Fail;
+    AudioSource audioSource;
 
     void OnCollisionEnter(Collision other)
     {
+        audioSource = GetComponent<AudioSource>();
        //Debug.Log("The game object is:" + other.gameObject.name);
        switch (other.gameObject.tag)
        {
-           case "Friendly":
-               break;
+            case "Friendly":
+                break;
             case "Finish":
                 StartSuccessSequence();
+                audioSource.PlayOneShot(Finish);
                 break;
             default:
                 StartCrashSequence();
+                audioSource.PlayOneShot(Fail);
                 break;
        }
     }

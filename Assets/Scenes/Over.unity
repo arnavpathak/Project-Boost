@@ -412,6 +412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2815e083783e5264cb74a9f37b4f70f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 2
+  Finish: {fileID: 8300000, guid: 3cef8aa12a8f2ce4e9b100179095cc68, type: 3}
+  Fail: {fileID: 8300000, guid: c16436590e011e545be323dc041d4848, type: 3}
 --- !u!1001 &4500344794715531320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -687,6 +690,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1092394680, guid: 8c2e2518633c40f4f90563da94b0c89c, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: 1a74755736737be49b45af770eb497a2, type: 3}
     - target: {fileID: 1092394681, guid: 8c2e2518633c40f4f90563da94b0c89c, type: 3}
       propertyPath: m_Drag
       value: 1.5
