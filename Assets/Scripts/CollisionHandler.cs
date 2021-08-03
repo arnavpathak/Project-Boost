@@ -6,12 +6,18 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float levelLoadDelay = 2f;
     [SerializeField] AudioClip Finish;
     [SerializeField] AudioClip Fail;
+
+    [SerializeField] ParticleSystem FinishParticles;
+    [SerializeField] ParticleSystem FailParticles;
+
     AudioSource audioSource;
+    ParticleSystem particleSystem2;
     bool isTransitioning = false;
 
     void Start()
     {
     audioSource = GetComponent<AudioSource>();
+    //particleSystem = GetComponent<ParticleSystem>();
     }
     
     void OnCollisionEnter(Collision other)
@@ -25,10 +31,14 @@ public class CollisionHandler : MonoBehaviour
             case "Finish":
                 StartSuccessSequence();
                 audioSource.PlayOneShot(Finish);
+                //GetComponent<ParticleSystem>().Play();
+                FinishParticles.Play();
                 break;
             default:
                 StartCrashSequence();
                 audioSource.PlayOneShot(Fail);
+                //GetComponent<ParticleSystem>().Play();
+                FailParticles.Play();
                 break;
        }
     }

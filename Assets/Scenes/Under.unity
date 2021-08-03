@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3224616641991039796, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3954375098478908068, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -178,10 +182,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 4748437331222385795, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
-      propertyPath: mainEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a74755736737be49b45af770eb497a2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
 --- !u!1 &705507993
@@ -360,26 +360,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 9.909, y: -1.446, z: -0.19}
---- !u!1 &2012536612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3954375098478908088, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
-  m_PrefabInstance: {fileID: 425039717}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2012536613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012536612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2815e083783e5264cb74a9f37b4f70f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelLoadDelay: 2
-  Finish: {fileID: 8300000, guid: 3cef8aa12a8f2ce4e9b100179095cc68, type: 3}
-  Fail: {fileID: 8300000, guid: c16436590e011e545be323dc041d4848, type: 3}
 --- !u!1001 &4500344794715531320
 PrefabInstance:
   m_ObjectHideFlags: 0
