@@ -41,13 +41,16 @@ public class Movement : MonoBehaviour
                 audioSource.PlayOneShot(mainEngine);
                 
             }
-            MainThruster.Play();
+            if(!MainThruster.isPlaying)
+            {
+                MainThruster.Play();    
+            }
             
         }
         else
         {
             audioSource.Stop();
-            MainThruster.Pause();
+            MainThruster.Stop();
         }
         
     }
@@ -55,19 +58,28 @@ public class Movement : MonoBehaviour
     {
        if (Input.GetKey(KeyCode.A))
         {
-            RightThruster.Play();
-            LeftThruster.Pause();
+            //RightThruster.Play();
+            LeftThruster.Stop();
             ApplyRotation(forward);
-        }
+            if(!RightThruster.isPlaying)
+            {
+                RightThruster.Play();    
+            }
                 
+        }
+        
         else if (Input.GetKey(KeyCode.D))
         {
             ApplyRotation(-forward);
-            RightThruster.Pause();
-            LeftThruster.Play();
-            
-        }
+            RightThruster.Stop();
+            //LeftThruster.Play();
+            if(!LeftThruster.isPlaying)
+            {
+                LeftThruster.Play();    
+            }
 
+        }
+        
         else
         {
             RightThruster.Pause();
