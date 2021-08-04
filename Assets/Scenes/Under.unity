@@ -130,8 +130,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2218933893553813894, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219605364789707252, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224616641991039796, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3224616641991039796, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
       propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314667183157316540, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3954375098478908068, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
@@ -182,8 +198,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 4724917260965791832, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724917260965791832, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724917260965791832, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748437331222385795, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: MainThruster
+      value: 
+      objectReference: {fileID: 425039718}
+    - target: {fileID: 6352398462490985161, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522908284515797121, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659233370927137411, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+--- !u!198 &425039718 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4844748466057724432, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+  m_PrefabInstance: {fileID: 425039717}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
