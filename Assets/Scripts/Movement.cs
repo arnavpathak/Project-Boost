@@ -47,7 +47,7 @@ public class Movement : MonoBehaviour
         else
         {
             audioSource.Stop();
-            //MainThruster.Stop();
+            MainThruster.Pause();
         }
         
     }
@@ -56,16 +56,22 @@ public class Movement : MonoBehaviour
        if (Input.GetKey(KeyCode.A))
         {
             RightThruster.Play();
+            LeftThruster.Pause();
             ApplyRotation(forward);
-            
-            
         }
-        
+                
         else if (Input.GetKey(KeyCode.D))
         {
             ApplyRotation(-forward);
+            RightThruster.Pause();
             LeftThruster.Play();
             
+        }
+
+        else
+        {
+            RightThruster.Pause();
+            LeftThruster.Pause();
         }
         
     }
