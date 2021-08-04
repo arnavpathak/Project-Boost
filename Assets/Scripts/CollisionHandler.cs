@@ -19,6 +19,7 @@ public class CollisionHandler : MonoBehaviour
     audioSource = GetComponent<AudioSource>();
     //particleSystem = GetComponent<ParticleSystem>();
     }
+ 
     
     void OnCollisionEnter(Collision other)
     {
