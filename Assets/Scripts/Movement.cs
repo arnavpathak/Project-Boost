@@ -37,11 +37,12 @@ public class Movement : MonoBehaviour
             //particleSystem2
         }
     }
+
     void Update()
     {
         ProcessThrust();
         ProcessRotation();
-        LCheat();
+        LCheat(); 
     }
 
 

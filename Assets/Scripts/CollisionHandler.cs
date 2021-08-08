@@ -13,17 +13,26 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
     ParticleSystem particleSystem2;
     bool isTransitioning = false;
+    bool collisionDisabled = false;
 
     void Start()
     {
     audioSource = GetComponent<AudioSource>();
     //particleSystem = GetComponent<ParticleSystem>();
     }
+
+    void Update() 
+    {
+        if (Input.GetKey(KeyCode.C))
+        {
+            collisionDisabled = !collisionDisabled;
+        }
+    }
  
     
     void OnCollisionEnter(Collision other)
     {
-       if (isTransitioning) { return; }
+       if (isTransitioning || collisionDisabled) { return; }
 
        switch (other.gameObject.tag)
        {
