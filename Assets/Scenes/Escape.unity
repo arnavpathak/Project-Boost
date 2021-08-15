@@ -812,11 +812,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4748437331222385795, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
       propertyPath: forward
-      value: 200
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4748437331222385795, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748437331222385795, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
+      propertyPath: mainThrust
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4748437331222385795, guid: 3216cae9bf0538144ae9f849751f9a3b, type: 3}
       propertyPath: LeftThruster

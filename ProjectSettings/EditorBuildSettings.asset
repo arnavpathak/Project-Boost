@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Moving end pad.unity
     guid: 86c0b9d677dac1941b7ff31b243e4c05
+  - enabled: 1
+    path: Assets/Scenes/Over (Boosted).unity
+    guid: 82a95bae9aba5044b94b9476becd0216
   m_configObjects: {}
